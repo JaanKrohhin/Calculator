@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator/curren.css">
+</head>
+<body>
+<header>
+    <h1>Calculator</h1>
+</header>
+<div id="navi"></div>
+<h2>Currency Calculator var 1</h2>
+<form name="cal1" onclick="return validateForm()" method="post">
+    <script src="calc.js"></script>
+    <label for='kogus'>Input an amount:</label>
+    <input type='number' name='kogus' id='kogus' value="1" min="1">Euro
+    <fieldset>
+        <legend>Choose Currency:</legend>
+        <label for='ruble'>Rubles</label>
+        <input type='radio' name='kogus' id='ruble' value="rub" onchange="change(event)">
+        <br>
+        <label for='dollar'>Dollar</label>
+        <input type='radio' name='kogus' id='dollar' value="dol" onchange="change(event)">
+        <br>
+        <label for='yen'>Japanese Yen</label>
+        <input type='radio' name='kogus' id='yen' value="yen" onchange="change(event)">
+        <br>
+        <label for='pounds'>British Pounds</label>
+        <input type='radio' name='kogus' id='pounds' value="pound" onchange="change(event)">
+        <br>
+    </fieldset>
+    <div id="answer">The answer goes here...</div>
+</form>
+
+<img src="" alt="Picture">
+
+<h2>Currency Calculator var 2</h2>
+<form name="ca2">
+    <label for='kogus2'>Input an amount:</label>
+    <input type='number' name='kogus2' id='kogus2' value="1" min="1">Euro(s) to
+    <select name="kogus2" onchange="selectChange(event)">
+        <option value="nothing">-Select Currency-</option>
+        <option value="ruble">Rubles</option>
+        <option value="dollar">Dollar</option>
+        <option value="yen">Japanese Yen</option>
+        <option value="pound">British Pounds</option>
+    </select>
+    <div id="answer2">The answer goes here...</div>
+</form>
+<img src="" alt="Picture2">
+
+<h2>Currency Calculator var 3</h2>
+<form name="cal3">
+    <label for='kogus3'>Input an amount:</label>
+    <input type='number' name='kogus3' id='kogus3' value="1" min="1" onclick="inputCurrency()">Euro(s) to
+
+    <input type='text' name='kogus3' id='curName' placeholder="--Currency--">
+    <label for='curName'>Write a currency(dollar,ruble,yen,pound)</label>
+
+    <input type="button" onclick="inputCurrency()" value="Convert">
+    <div id="answer3">The answer goes here...</div>
+</form>
+<h2>Time Calculator</h2>
+<form name="time">
+    <label for='time'>Input an amount:</label>
+    <input type='number' name='time' id='timeA' value="1" min="1">
+    <select name="kogus2" onchange="selectChange(event)">
+        <option value="nothing">--Select Time Measurement--</option>
+        <option value="millennium">Millennium</option>
+        <option value="century">Century</option>
+        <option value="decade">Decade</option>
+        <option value="year">Year</option>
+        <option value="quarter">Quarter</option>
+        <option value="month">Month</option>
+        <option value="week">Week</option>
+        <option value="day">Day</option>
+        <option value="hour">Hour</option>
+        <option value="minute">Minute</option>
+        <option value="second">Second</option>
+        <option value="millisecond">Millisecond</option>
+        <option value="microsecond">Microsecond</option>
+        <option value="nanosecond">Nanosecond</option>
+        <option value="picosecond">Picosecond</option>
+        <option value="jiffy">Jiffy</option>
+    </select>
+    <br>
+    <label for='timeB'>Input an amount:</label>
+    <input type='number' name='time' id='timeB' value="1" min="1">
+    <select name="time" onchange="selectChange(event)">
+    <div id="answerT">The answer goes here...</div>
+</form>
+
+<div id="foo"></div>
+<script src="js/menusJS.js"></script>
+</body>
+</html>
