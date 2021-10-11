@@ -1,0 +1,12 @@
+fieldset{
+    width: 30%;
+    background-color: rgb(14, 77, 133);
+    border-color: #0D2249;
+}
+legend{
+    margin: 10px;
+}
+input[type=number]{
+    padding: 5px;
+    width: 40px;
+}
